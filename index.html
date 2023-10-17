@@ -5,35 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="head-content">
-        <h1>My Library</h1>
+        <h1>My Library<span><img src="images/book.png" alt="book" srcset=""></span></h1>
         <dialog>
-            <button class="close-button">Close</button>
+            <button class="close-button">X</button>
             <form action="" class="form-book">
-                <label for="title">Title</label>
-                <input type="text" name="title" id="title" value="" required>
-                <label for="author">Author</label>
-                <input type="text" name="author" id="author" required>
-                <label for="pages">Pages</label>
-                <input type="number" name="pages" id="pages" required>
-                <label for="read">Read</label>
-                <input type="radio" name="read-status" id="read" value="read" required>
-                <label for="not-read">Not Read</label>
-                <input type="radio" name="read-status" id="not-read" value="not-read" required>
-                <label for="add-book"></label>
-                <input type="button" value="Add Book" id="add-book">
-                <label for="clear"></label>
-                <input type="button" value="Clear All" id="clear-button">
+                <div class="form-items">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" id="title" required>
+                    <label for="author">Author</label>
+                    <input type="text" name="author" id="author" required>
+                    <label for="pages">Pages</label>
+                    <input type="number" name="pages" id="pages" required>
+                </div>
+                <div class="form-buttons">
+                    <label for="add-book"></label>
+                    <input type="button" value="Add Book" id="add-book">
+                    <label for="clear-button"></label>
+                    <input type="button" value="Clear All" id="clear-button">
+                </div>
+
             </form>
         </dialog>
         <button class="new-book">
-            NEW BOOK
+            Add a new book in the shelf
         </button>
     </div>
     <div class="display-books">
-
+        <div class="book-shelf"></div>
     </div>
     <script src="script.js"></script>
 </body>
